@@ -4,7 +4,7 @@ database is made using sqlite3, backend in php, and frontend probably in js or s
 
 # goals
 
-1. add a section(wiki?) to explain how the data is stored in the db and how to access it
+1. ~~add a section(wiki?) to explain how the data is stored in the db and how to access it~~
 2. make 3 formats to view 
    - daily view = (shows all days from 1-30) 
      - has same tile as the days in the month
