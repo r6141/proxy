@@ -12,7 +12,7 @@ $path = './users';
 $files = array_diff(scandir($path), array('.', '..'));
 
 foreach ($files as $key=>$item){
-    echo "<a href='{$base_url}{$item}'>{$item}</a> <br>";
+    echo "<a href='{$base_url}users/{$item}'>{$item}</a> <br>";
 }
 
 echo "<a href='{$base_url}new.php'>new user</a>";

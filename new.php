@@ -36,9 +36,12 @@ if(isset($_POST['formSubmit']))
 {
 	$name = $_POST['name'];
 	$path = "./users/{$name}";
+	$dbpath = "./users/{$name}/index.db";
 	mkdir("$path");
 	chmod($path, 0747);
 	$db = new sqlite3("{$path}/index.db");
+	chmod($dbpath, 0747);
+	shell_exec("cp ./template/* {$path}");
 	
         function getDatesFromRange($start, $end, $format = 'Y-m-d') {$array = array();$interval = new DateInterval('P1D');$realEnd = new DateTime($end);$realEnd->add($interval);$period = new DatePeriod(new DateTime($start), $interval, $realEnd);foreach($period as $date) { $array[] = $date->format($format); } return $array; }
 	$year = date("Y");
