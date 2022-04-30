@@ -95,10 +95,10 @@ label {
   text-align: center;
 }
 
-a:link {color:#808080;}      /* unvisited link */
-a:visited {color:#808080;}  /* visited link */
-a:hover {color:#808080;}  /* mouse over link */
-a:active {color:#808080;}  /* selected link */
+a:link {color:#675252;}      /* unvisited link */
+a:visited {color:#675252;}  /* visited link */
+a:hover {color:#675252;}  /* mouse over link */
+a:active {color:#675252;}  /* selected link */
 
 footer {
   position: fixed;
